@@ -1,0 +1,9 @@
+export { default as AcademicInfo } from "./academicInfo";
+export { default as DocumentsInfo } from "./documentsInfo";
+export { default as EducationInfo } from "./educationInfo";
+export { default as ExperienceInfo } from "./experienceInfo";
+export { default as FamilyInfo } from "./familyInfo";
+export { default as PersonalInfo } from "./personalInfo";
+export { default as MainLifeCycle } from "./mainLifeCycle";
+export { default as LifeCycle } from "./lifecycle";
+export { default as UserMainTitle } from "./userMainTitle";

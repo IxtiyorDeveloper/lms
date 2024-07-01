@@ -1,0 +1,10 @@
+export { default as AbsentStudents } from "./absent-students";
+export { default as GroupExamResult } from "./exam-list/groupInside";
+export { default as FailedStudent } from "./exam-list/home/failedStudents";
+export { default as ExamList } from "./exam-list/home";
+export { default as ExamDates } from "./exam-dates";
+export { default as RedList } from "./red-list";
+export { default as AcademicControl } from "./control";
+export { default as TeacherRanking } from "../ranking/home";
+export { default as PotentialFailList } from "./potential-fail";
+export { default as MockGroupExamResult } from "./exam-list/mockGroupInside";

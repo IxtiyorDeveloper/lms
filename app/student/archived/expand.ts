@@ -1,0 +1,2 @@
+export const expand =
+  "preferBranches,deleted_at,branch,preferDays,preferTimes,course,groupType,level.parent,lessonDay,lessonTime,buttonActions,previous_place,lastGroup.groupType,lastGroup.groupMentors.user.userProfile.avatar,lastGroup.room,lastGroup.level.parent,lastGroup.lessonDay,user.userLabels.createdBy,lastGroup.lessonTime,permissionLabels,permissionActions,tabs,lastStudentFlow,userProfile.avatar.children";

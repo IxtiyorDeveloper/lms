@@ -1,0 +1,45 @@
+import { MainPhone } from "constants/phoneTypes";
+
+export const defaultValues = {
+  firstName: "",
+  username: "",
+  lastName: "",
+  avatar_file_id: "",
+  dob: "",
+  secondName: "",
+  passport_back_file_id: "",
+  passport_front_file_id: "",
+  official_address: "",
+  ielts_file_id: "",
+  ielts_score: "",
+  live_address: "",
+  born_address: "",
+  passport_number: "",
+  passport_given_date: "",
+  passport_expire_date: "",
+  nationality: "",
+  phoneType: "",
+  family_status: "",
+  phoneNumber: "",
+  passport_given_by: "",
+  citizenship: "",
+  root: {
+    gender: "",
+  },
+  phone_numbers: [{ type: `${MainPhone}`, phone: undefined }],
+  educations: [],
+  family_members: [],
+  work_experiences: [],
+};
+
+export const ieltsOptions = [
+  { label: "5.0", value: "5.0" },
+  { label: "5.5", value: "5.5" },
+  { label: "6.0", value: "6.0" },
+  { label: "6.5", value: "6.5" },
+  { label: "7.0", value: "7.0" },
+  { label: "7.5", value: "7.5" },
+  { label: "8.0", value: "8.0" },
+  { label: "8.5", value: "8.5" },
+  { label: "9.0", value: "9.0" },
+];

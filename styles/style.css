@@ -1,0 +1,32 @@
+
+.file_container p{
+  padding: 18px;
+  font-weight: 700;
+}
+.pdf_table {  
+
+}
+.pdf_table tr th {
+  font-size: 14px;
+  text-align: left;
+  padding: 0 10px;
+  min-width: 16%;
+  white-space: nowrap;
+}
+
+.pdf_table tr td {
+  font-size: 14px;
+  padding: 4px 10px;
+  min-width: 16%;
+  white-space: nowrap;  
+}
+.pdf_table tr:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+.main_index{
+  width: 8%;
+}
+
+#superDeveloper111 {
+  display: none!important;
+}

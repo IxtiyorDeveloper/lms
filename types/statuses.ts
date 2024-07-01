@@ -1,0 +1,14 @@
+export enum ETeacher {
+  S100 = 100,
+  S200 = 200,
+}
+
+export enum ETabStatuses {
+  TAB_WAITING = "100",
+  TAB_ARCHIVED = "200",
+  TAB_STUDYING = "300",
+  TAB_TRANSFERRING = "400",
+  TAB_STOPPING = "500",
+  TAB_NEW_STUDENT_ATTENDED = "600",
+  TAB_NEW_STUDENT_NOT_ATTENDED = "700",
+}

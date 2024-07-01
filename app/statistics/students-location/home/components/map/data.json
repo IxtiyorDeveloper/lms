@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Oybek",
+    "location": [41.299092, 69.272489],
+    "description": "​Afrosiyob ko'cha, 16, Mirobod, Toshkent"
+  },
+  {
+    "name": "C1",
+    "location": [41.313864, 69.286832],
+    "description": "Shaxrisabr ko'cha, 1, Mirzo-Ulug'bek, Toshkent"
+  },
+  {
+    "name": "C2",
+    "location": [41.314413, 69.286418],
+    "description": "Oloy daha, 5, Mirzo-Ulug'bek, Toshkent"
+  },
+  {
+    "name": "Westminister",
+    "location": [41.306098, 69.284237],
+    "description": "​Istiqbol ko'cha, 14, Mirobod, Toshkent"
+  },
+  {
+    "name": "Xalqlar Do'stligi",
+    "location": [41.311233, 69.245472],
+    "description": "​Islom Karimov, 8/1,​ Olmazor, Chilonzor, Toshkent"
+  },
+  {
+    "name": "Yunusobod",
+    "location": [41.329087, 69.283059],
+    "description": "Amir Temur ko'cha, 86, Minor (C-6), Yunusobod, Toshkent"
+  },
+  {
+    "name": "Sergeli",
+    "location": [41.221737, 69.222465],
+    "description": "​Sergeli mavzesi-8, Sergeli, Toshkent"
+  },
+  {
+    "name": "Chilonzor",
+    "location": [41.275391, 69.20431],
+    "description": "Bunyodkor 52/2, Chilonzor, Toshkent"
+  },
+  {
+    "name": "Ganga",
+    "location": [41.327221, 69.247384],
+    "description": "Abdulla Qodiriy ko'chasi, 21, Toshkent"
+  },
+  {
+    "name": "Buyuk ipak yo'li",
+    "location": [41.326771660286184, 69.33065503401386],
+    "description": "107-109, Buyuk Ipak Yuli Road, 100077, Tashkent"
+  }
+]

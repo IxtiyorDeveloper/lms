@@ -1,0 +1,12 @@
+export { default as ProductsServicesPage } from "../settings/financeSettings/components/product-services";
+export { default as Transactions } from "./transactions";
+export { default as Debtors } from "./debtors";
+export { default as Salary } from "./salary/home";
+export { default as CoverTeacher } from "./salary/coverTeacher";
+export { default as CoverTeacherSettings } from "./salary/coverTeacher/settings";
+// export { default as CoverTeacher } from "./salary/cover-teacher";
+export { default as CashFlow } from "./cashflow";
+export { default as BlackList } from "./black-list";
+export { default as StudentBalance } from "./student-balance";
+export { default as PaymentStatistics } from "./payment-statistics";
+export { default as Shop } from "./shop";

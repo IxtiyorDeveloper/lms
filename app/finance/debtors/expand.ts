@@ -1,0 +1,2 @@
+export const expand =
+  "buttonActions,group.groupType,transferredTo.group,actualTransfers.group,actualPayment,group.teacher.user.userProfile,group.lessonDays,group.support.user.userProfile,group.room,group.level.parent,group.groupMentors.user,contactResponsibles.user,user.userProfile.avatar.children,user.student.permissionLabels,group.lessonDay,group.lessonTime,user.userPhones,user.userLabels.createdBy,branch,permissionActions,group.lessonDay.lessonWeekDayIndexes";

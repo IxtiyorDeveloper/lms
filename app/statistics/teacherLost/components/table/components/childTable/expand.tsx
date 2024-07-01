@@ -1,0 +1,2 @@
+export const expand =
+  "lostStudents.group_detail,lostStudents.student.currentGroupContact.group.lessonTime,lostStudents.student.currentGroupContact.group.lessonDay,lostStudents.student.currentGroupContact.group.level.parent,lostStudents.student.currentGroupContact.group.groupMentors.user,lostStudents.student.currentGroupContact.group.room.branch,lostStudents.student.currentGroupContact.group.groupType,lostStudents.leavingCategory,lostStudents.user.userPhones,lostStudents.user.userProfile.avatar.children";

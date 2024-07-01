@@ -1,0 +1,2 @@
+export const expand =
+  "contactsCountByGender,real_total_contact_count,partial_payed_count,total_study_contact_count,active_contact_count,transferred_contact_count,new_student_not_attended_contact_count,new_student_attended_contact_count,free_place,payment_count,average_age,groupMentors.user.userProfile,level.parent,podo_count";

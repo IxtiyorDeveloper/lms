@@ -1,0 +1,2 @@
+export const expandReferral =
+  "referredBy.confirmedPhone,referredBy.userProfile.avatar.full_url,student.user.userLabels,student.user.userPhones,student.user.avatar,student.createdBy,student.currentGroupContact.group.level.parent,student.currentGroupContact.group.room.branch,student.currentGroupContact.group.groupMentors.user,student.lessonCount,lastLifeCycle,student.currentGroupContact.group.lessonDay,student.currentGroupContact.group.lessonTime,student.currentGroupContact.group.groupType";

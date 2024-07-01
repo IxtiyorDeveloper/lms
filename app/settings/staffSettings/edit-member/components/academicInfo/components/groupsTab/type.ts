@@ -1,0 +1,7 @@
+export enum GROUP_STATE {
+  OPENING = 100,
+  OPENED = 200,
+  RUNNING = 300,
+  CLOSING = 400,
+  CLOSED = 500,
+}

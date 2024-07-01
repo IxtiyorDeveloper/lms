@@ -1,0 +1,9 @@
+export { default as StudentHome } from "./[studentId]";
+export { default as WaitingList } from "./waiting-list";
+export { default as BannedStudents } from "./banned-students";
+export { default as NewStudents } from "./new-students";
+export { default as ActiveStudents } from "./active-students";
+export { default as ArchivedStudents } from "./archived";
+export { default as CreateStudent } from "./create-student";
+export { default as Recommendations } from "./recommendation";
+export { default as Birthdays } from "./birthdays";

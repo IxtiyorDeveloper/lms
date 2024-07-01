@@ -1,0 +1,3 @@
+export const OPERATOR_STATUS_ACTIVE = 100;
+
+export const OPERATOR_STATUS_INACTIVE = 200;

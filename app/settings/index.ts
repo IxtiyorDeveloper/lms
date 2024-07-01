@@ -1,0 +1,16 @@
+export { default as CompanySettings } from "./companySettings";
+export { default as AcademicSettings } from "./academicSettings";
+export { default as Rooms } from "./academicSettings/rooms/[regionId]/[branchId]";
+export { default as CreateCourse } from "./academicSettings/createCourse";
+export { default as DebtorsPage } from "./debtors";
+export { default as SmsPage } from "./smsSettings/home";
+export { default as SmsBlackList } from "./smsSettings/blackList";
+export { default as FinanceSettings } from "./financeSettings";
+export { default as Documents } from "./documents/home";
+export { default as Holidays } from "./holidays";
+export { default as StaffSettings } from "./staffSettings";
+export { default as CreateCandidate } from "./staffSettings/components/registering/candidateCreate";
+export { default as StaffSettingsGroup } from "./staffSettings/[staffsGroupId]";
+export { default as CallSettings } from "./callSettings";
+export { default as RewardsPage } from "./staffSettings/rewards";
+export { default as VacationSchedulePage } from "./staffSettings/vacationSchedule";

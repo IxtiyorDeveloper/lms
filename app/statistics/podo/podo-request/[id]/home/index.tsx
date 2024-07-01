@@ -1,0 +1,40 @@
+import React from "react";
+import { FilterWrapper, Wrapper } from "./style";
+import FilterComponent from "./components/filter";
+import MiddleSide from "./components/middle";
+import Table from "./components/table";
+import { useGetPodoRequestStatistic } from "hooks";
+import { expand } from "./expand";
+import { useRouter } from "next/router";
+import { Spin } from "antd";
+import PodoRequestModal from "globals/components/podoRequest";
+import DeletePodoRequest from "globals/components/deletePodoRequest";
+
+const SingleReport = () => {
+  const router = useRouter();
+  const { query } = router;
+  const id = router.query?.id;
+
+  const { data, isLoading } = useGetPodoRequestStatistic({
+    query_params: {
+      expand,
+      id,
+      ...query,
+    },
+  });
+  return (
+    <Wrapper>
+      <PodoRequestModal />
+      <DeletePodoRequest />
+      <Spin spinning={isLoading}>
+        <FilterWrapper>
+          <FilterComponent />
+        </FilterWrapper>
+        <MiddleSide data={data} />
+        <Table data={data} />
+      </Spin>
+    </Wrapper>
+  );
+};
+
+export default SingleReport;

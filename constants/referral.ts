@@ -1,0 +1,6 @@
+export const REFERRAL_CONTACTING = 1000;
+export const REFERRAL_REGISTERED = 2000;
+export const REFERRAL_PAID = 3000;
+export const REFERRAL_APPROVED = 4000;
+export const REFERRAL_SPENT = 5000;
+export const REFERRAL_REJECTED = 6000;

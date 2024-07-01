@@ -1,0 +1,2 @@
+export const LEAD_SCENARIO_CREATED = 2200;
+export const LEAD_SCENARIO_CHANGE = 4500;

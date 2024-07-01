@@ -1,0 +1,2 @@
+export const expand =
+  "lifeCycles,buttonActions,gotTaxReceipt,createdBy.userProfile.avatar.children,educationalIncome.contact,educationalIncome.user.userProfile.avatar.children,educationalIncome.user.userPhones,educationalIncome.group.level.parent,educationalIncome.group.room.branch,educationalIncome.group.teacher.user.userProfile,educationalIncome.group.support.user.userProfile,productAndServiceIncome.user.userProfile.avatar.children,productAndServiceIncome.user.userPhones";

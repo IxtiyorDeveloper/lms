@@ -1,0 +1,4 @@
+export enum PixelType {
+  FACEBOOK_HEADER = "FACEBOOK_HEADER",
+  FACEBOOK_BODY = "FACEBOOK_BODY",
+}

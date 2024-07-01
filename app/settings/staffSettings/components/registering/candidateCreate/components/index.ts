@@ -1,0 +1,11 @@
+export { default as FormTopSide } from "./formTopSide";
+export { default as AddressForm } from "./addressForm";
+export { default as EducationForm } from "./educationForm";
+export { default as IELTSForm } from "./ieltsForm";
+export { default as PassportForm } from "./passportForm";
+export { default as PersonalForm } from "./personalInfoForm";
+export { default as PhonesForm } from "./phonesForm";
+export { default as FamilyForm } from "./familyForm";
+export { default as ExperienceForm } from "./experienceForm";
+export { default as Buttons } from "./buttons";
+export { default as GenerateDetailsModal } from "./generateDetailsModal";

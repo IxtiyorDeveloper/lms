@@ -1,0 +1,6 @@
+@media print {
+    * {
+        font-family: sans-serif !important;
+        background-color: red;
+    }
+}

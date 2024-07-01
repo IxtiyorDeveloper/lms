@@ -1,0 +1,16 @@
+.build_template:
+  stage: build
+  image: registry.inter-nation.uz/infrastructure/docker:helm-dind
+  before_script:
+    - docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD
+    - apk update
+    - apk add --no-cache vault libcap jq
+    - setcap cap_ipc_lock= /usr/sbin/vault
+  script:
+    - export VAULT_ADDR=$VAULT_ADDR
+    - export VAULT_TOKEN=$VAULT_TOKEN
+    - vault kv get -format json -field=data $SECRET_PATH > env.json && jq -r 'to_entries|map("\(.key)=\(.value|tostring)")|.[]' env.json > ./.env
+    - pwd && ls -larth
+    - make build-image DOCKERFILE=$DOCKERFILE TAG=$CI_PIPELINE_IID PROJECT_NAME=$CI_PROJECT_NAMESPACE REGISTRY=$CI_REGISTRY ENV_TAG=$ENV_TAG SOURCE=$SOURCE PRIVATE_REPO_PASSWORD=$PRIVATE_REPO_PASSWORD
+    - make push-image TAG=$CI_PIPELINE_IID PROJECT_NAME=$CI_PROJECT_NAMESPACE REGISTRY=$CI_REGISTRY ENV_TAG=$ENV_TAG
+    - make clear-image TAG=$CI_PIPELINE_IID PROJECT_NAME=$CI_PROJECT_NAMESPACE REGISTRY=$CI_REGISTRY ENV_TAG=$ENV_TAG

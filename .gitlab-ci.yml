@@ -1,0 +1,81 @@
+include:
+  - .gitlab/ci/*.gitlab-ci.yml
+
+stages:
+  - build
+  - deploy
+  - rollback
+
+### ------------- BUILD STAGING ------------- ###
+build-dev-frontend:
+  stage: build
+  extends: .build_template
+  variables:
+    DOCKERFILE: Dockerfile
+    ENV_TAG: test
+    SOURCE: frontend
+    PRIVATE_REPO_PASSWORD: $PRIVATE_REPO_PASSWORD
+    SECRET_PATH: $LMS_WEB_DEV
+  only:
+    - dev
+
+build-staging-frontend:
+  stage: build
+  extends: .build_template
+  variables:
+    DOCKERFILE: Dockerfile
+    ENV_TAG: staging
+    SOURCE: frontend-staging
+    PRIVATE_REPO_PASSWORD: $PRIVATE_REPO_PASSWORD
+    SECRET_PATH: $LMS_WEB_DEV
+  only:
+    - staging
+
+### ------------- BUILD PROD ------------- ###
+build-prod-frontend:
+  stage: build
+  extends: .build_template
+  variables:
+    DOCKERFILE: Dockerfile
+    ENV_TAG: latest
+    SOURCE: frontend
+    PRIVATE_REPO_PASSWORD: $PRIVATE_REPO_PASSWORD
+    SECRET_PATH: $LMS_WEB_PROD
+  only:
+    - main
+
+### ------------- DEPLOY DEV ------------- ###
+deploy-dev-frontend:
+  stage: deploy
+  extends: .deploy_template
+  variables:
+    NAMESPACE: dev-microservices
+    VALUES_FILE: .helm/test/values-frontend-test.yaml
+    K8SCONFIGJSON: $INTERNATION_KUBECONFIG
+    SOURCE: frontend
+  only:
+    - dev
+
+### ------------- DEPLOY STAGING ------------- ###
+deploy-staging-frontend:
+  stage: deploy
+  extends: .deploy_template
+  variables:
+    NAMESPACE: dev-microservices
+    VALUES_FILE: .helm/test/values-frontend-staging.yaml
+    K8SCONFIGJSON: $INTERNATION_KUBECONFIG
+    SOURCE: frontend-staging
+  only:
+    - staging
+
+### ------------- DEPLOY MASTER ------------- ###
+deploy-prod-frontend:
+  stage: deploy
+  extends: .deploy_template
+  variables:
+    NAMESPACE: prod-microservices
+    VALUES_FILE: .helm/prod/values-frontend-prod.yaml
+    K8SCONFIGJSON: $INTERNATION_KUBECONFIG
+    SOURCE: frontend
+  only:
+    - main
